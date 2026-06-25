@@ -31,13 +31,13 @@ We modeled the velocity for both corners using distinct quadratic models: $v(t) 
 Turn 6 features an empirical minimum apex speed of 13.914 m/s at 1.0 s. Using the boundary entry coordinate (0.0, 35.000), the expanded standard form is:
 $$v_6(t) = 21.086t^2 - 42.172t + 35.000$$
 
-![Turn 6 Velocity Profile](plots/turn6_velocity.png)
+![Turn 6 Velocity Profile](turn6_velocity.png)
 
 ### Turn 13: High-Speed Aerodynamic
 Turn 13 features an empirical minimum apex speed of 57.683 m/s at 1.5 s. Using the boundary entry coordinate (0.0, 80.003), the expanded standard form is:
 $$v_{13}(t) = 9.920t^2 - 29.760t + 80.003$$
 
-![Turn 13 Velocity Profile](plots/turn13_velocity.png)
+![Turn 13 Velocity Profile](turn13_velocity.png)
 
 ---
 
@@ -48,7 +48,7 @@ Differentiating both continuous velocity functions yields the instantaneous long
 
 Evaluating at corner entry ($t = 0$), Turn 6 experiences a peak braking force of -42.172 m/s² (approx -4.3g) whereas Turn 13 experiences -29.760 m/s² (approx -3.0g). This highlights that the lower-speed corner requires a much steeper deceleration profile due to the tighter turning radius.
 
-![Acceleration Profiles](plots/acceleration_comparison.png)
+![Acceleration Profiles](acceleration_comparison.png)
 
 ---
 
@@ -57,7 +57,7 @@ Because F1 telemetry captures discrete "snapshots" rather than continuous stream
 
 In kinematics, the area under a Velocity-Time graph equals the total distance traveled. By mapping trapezoids under our discrete telemetry points, we can bridge the gap between digital data and continuous physics, allowing us to accurately calculate the total distance navigated during the cornering phase.
 
-![Turn 6 Trapezoidal Integration](plots/turn6_trapezoidal.png)
+![Turn 6 Trapezoidal Integration](turn6_trapezoidal.png)
 *(Above: The visual representation of the Trapezoidal Rule applied to the Turn 6 telemetry data, illustrating the accumulation of distance over the 2.0-second cornering phase.)*
 
 ---
