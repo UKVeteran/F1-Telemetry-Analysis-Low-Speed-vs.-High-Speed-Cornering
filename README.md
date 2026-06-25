@@ -31,7 +31,7 @@ We modeled the velocity for both corners using distinct quadratic models: `v(t) 
 Turn 6 features an empirical minimum apex speed of 13.914 m/s at 1.0 s. Using the boundary entry coordinate (0.0, 35.000), the expanded standard form is:
 `v_6(t) = 21.086t^2 - 42.172t + 35.000`
 
-![Turn 6 Velocity Profile](plots/turn6_velocity.png)
+![Turn 6 Velocity Profile](turn6_velocity.png)
 
 ### Turn 13: High-Speed Aerodynamic
 Turn 13 features an empirical minimum apex speed of 57.683 m/s at 1.5 s. Using the boundary entry coordinate (0.0, 80.003), the expanded standard form is:
